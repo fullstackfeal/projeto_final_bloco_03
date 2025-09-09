@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 function Navbar() {
   return (
     <nav className="bg-cyan-700 text-white flex justify-between p-4">
@@ -7,12 +8,13 @@ function Navbar() {
         <Link to='/home' className="text-2xl font-bold">FarmVIDA</Link>
         <div className="flex gap-4">
           Produtos 
-          Categorias 
-          Cadastrar Categoria 
+          <Link to='/categoria' className='hover:underline'>Categorias</Link>
+          <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar Categoria</Link>
           Sair
         </div>
       </div>
     </nav>
+    
   );
 }
 export default Navbar
