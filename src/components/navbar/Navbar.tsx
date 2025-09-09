@@ -1,7 +1,10 @@
-export default function Navbar() {
+import { Link } from "react-router-dom";
+
+function Navbar() {
   return (
     <nav className="bg-cyan-700 text-white flex justify-between p-4">
-      <div className="container flex justify-between text-1g mx-8">FarmVIDA
+      <div className="container flex justify-between text-1g mx-8">
+        <Link to='/home' className="text-2xl font-bold">FarmVIDA</Link>
         <div className="flex gap-4">
           Produtos 
           Categorias 
@@ -12,3 +15,4 @@ export default function Navbar() {
     </nav>
   );
 }
+export default Navbar

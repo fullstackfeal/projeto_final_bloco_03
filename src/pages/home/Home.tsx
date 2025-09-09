@@ -10,7 +10,7 @@ function Home() {
           </div>
           <div className="flex justify-center ">
             <img
-              src="https://www.nicepng.com/png/detail/204-2049937_logo-de-farmacia-png.png"
+              src="./images/logo.png"
               alt="Logo de Farmácia"
             />
           </div>
