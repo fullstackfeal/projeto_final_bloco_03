@@ -14,6 +14,7 @@ function App() {
        <Navbar />
        <div className='bg-gradient-to-b from-slate-200/80 to-white min-h-[80vh]'>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path='/home' element={<Home />}/>
           <Route path='/categoria' element={<ListaCategoria />}/>
           <Route path='/cadastrarcategoria' element={<FormCategoria/>} />
